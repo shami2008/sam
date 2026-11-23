@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команда «ВАПА» — сайт-визитка</title>
+    <meta name="description"
+        content="Сайт-визитка команды «ВАПА» — участников Всероссийского хакатона «Волга.ТОП» 2026.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+    <!-- ================= ШАПКА ================= -->
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="#top" aria-label="ВАПА — на главную">
+                <svg class="logo__mark" width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                    <rect width="36" height="36" rx="10" fill="url(#logoGradient)" />
+                    <path d="M8 22c3-7 6-7 9 0s6 7 9 0" stroke="#fff" stroke-width="2.5" stroke-linecap="round"
+                        fill="none" />
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0" y1="0" x2="36" y2="36">
+                            <stop stop-color="#4f46e5" />
+                            <stop offset="1" stop-color="#06b6d4" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo__text">ВАПА</span>
+            </a>
+
+            <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav" id="nav" aria-label="Основное меню">
+                <ul class="nav__list">
+                    <li><a href="#about">О команде</a></li>
+                    <li><a href="#team">Участники</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ================= ГЕРОЙ-БЛОК ================= -->
+        <section class="hero" id="top">
+            <div class="container">
+                <p class="hero__badge">Казань · КНИТУ · «ТОП IT» · 2026</p>
+                <h1 class="hero__title">
+                    Мы — команда <span class="hero__accent">«ВАПА»</span>
+                </h1>
+                <p class="hero__motto">«Вектор атаки — правильный алгоритм»</p>
+                <p class="hero__lead">
+                    Четыре студента направления «ТОП IT», которые собирают веб-продукты
+                    полного цикла: от идеи и макета до развёрнутого сервиса.
+                </p>
+                <div class="hero__actions">
+                    <a class="btn btn--primary" href="#team">Познакомиться с командой</a>
+                    <a class="btn btn--ghost" href="#projects">Смотреть проекты</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= О КОМАНДЕ ================= -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section__head">
+                    <span class="kicker">О команде</span>
+                    <h2 class="section__title">Почему мы здесь</h2>
+                    <p class="section__lead">
+                        Мы объединились на первом курсе вокруг идеи делать сервисы для
+                        Хакато для нас — это стресс-тест не только продукта, но и наших договоренностей: кто берет
+                        ответственность, как мы спорим и что делаем, когда времени почти нет.
+                    </p>
+                </div>
+                <div class="about">
+                    <p class="about__text">
+                        Нам интересно увидеть, где наша команда ломается под нагрузкой и где неожиданно собирается в
+                        лучшую версию себя.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= УЧАСТНИКИ ================= -->
+        <section class="section section--muted" id="team">
+            <div class="container">
+                <div class="section__head">
+                    <span class="kicker">Участники</span>
+                    <h2 class="section__title"> Четыре человека, один продукт</h2>
+                    <p class="section__lead">
+                        У каждого — своя зона ответственности в команде и свой вклад в репозиторий.
+                    </p>
+                </div>
+
+                <div class="grid grid--team">
+                    <a class="card member" href="member.html?id=1">
+                        <div class="member__avatar" aria-hidden="true">У1</div>
+                        <h3 class="member__name">Узбек1</h3>
+                        <p class="member__role">Капитан · Frontend-разработчик</p>
+                        <p class="member__group">Группа 861-ТОП243</p>
+                        <ul class="chips" aria-label="Навыки участника">
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>Vite</li>
+                            <li>Git</li>
+                        </ul>
+                        <a class="member__contact" href="mailto:captain@example.ru">Написать узбеку</a>
+                    </article>
+
+                    <a class="card member" href="member.html?id=1">
+                        <div class="member__avatar" aria-hidden="true">У2</div>
+                        <h3 class="member__name">Узбек2</h3>
+                        <p class="member__role">UI/UX-дизайнер</p>
+                        <p class="member__group">Группа 861-ТОП243</p>
+                        <ul class="chips" aria-label="Навыки участника">
+                            <li>Figma</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Адаптивность</li>
+                        </ul>
+                        <a class="member__contact" href="mailto:design@example.ru">Обсудить дизайн с узбеком</a>
+                    </a>
+
+                    <a class="card member" href="member.html?id=1">
+                        <div class="member__avatar" aria-hidden="true">У3</div>
+                        <h3 class="member__name">Узбек3</h3>
+                        <p class="member__role">Backend-разработчик</p>
+                        <p class="member__group">Группа 861-ТОП243</p>
+                        <ul class="chips" aria-label="Навыки участника">
+                            <li>Python</li>
+                            <li>FastAPI</li>
+                            <li>PostgreSQL</li>
+                            <li>Docker</li>
+                        </ul>
+                        <a class="member__contact" href="mailto:backend@example.ru">Написать разработчику</a>
+                    </a>
+
+                    <a class="card member" href="member.html?id=1">
+                        <div class="member__avatar" aria-hidden="true">У4</div>
+                        <h3 class="member__name">Узбек4</h3>
+                        <p class="member__role">Аналитик · Тестирование</p>
+                        <p class="member__group">Группа 861-ТОП243</p>
+                        <ul class="chips" aria-label="Навыки участника">
+                            <li>SQL</li>
+                            <li>Postman</li>
+                            <li>Pytest</li>
+                            <li>Документация</li>
+                        </ul>
+                        <a class="member__contact" href="mailto:qa@example.ru">Задать вопрос по проекту</a>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= НАВЫКИ ================= -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section__head">
+                    <span class="kicker">Навыки команды</span>
+                    <h2 class="section__title">Технологический стек</h2>
+                    <p class="section__lead">
+                        Инструменты, с которыми мы работали в учебных и личных проектах.
+                    </p>
+                </div>
+
+                <div class="grid grid--skills">
+                    <article class="card skill-card">
+                        <h3 class="skill-card__title">Языки</h3>
+                        <ul class="chips">
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </article>
+
+                    <article class="card skill-card">
+                        <h3 class="skill-card__title">Фронтенд</h3>
+                        <ul class="chips">
+                            <li>React</li>
+                            <li>Vite</li>
+                            <li>React Router</li>
+                            <li>Адаптивная вёрстка</li>
+                        </ul>
+                    </article>
+
+                    <article class="card skill-card">
+                        <h3 class="skill-card__title">Бэкенд и данные</h3>
+                        <ul class="chips">
+                            <li>FastAPI</li>
+                            <li>PostgreSQL</li>
+                            <li>SQLAlchemy</li>
+                            <li>REST API</li>
+                        </ul>
+                    </article>
+
+                    <article class="card skill-card">
+                        <h3 class="skill-card__title">Инструменты</h3>
+                        <ul class="chips">
+                            <li>GitVerse</li>
+                            <li>Git</li>
+                            <li>Docker</li>
+                            <li>Figma</li>
+                            <li>Postman</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ПРОЕКТЫ ================= -->
+        <section class="section section--muted" id="projects">
+            <div class="container">
+                <div class="section__head">
+                    <span class="kicker">Проекты</span>
+                    <h2 class="section__title">Что мы уже сделали</h2>
+                    <p class="section__lead">
+                        Работы, которые команда выполнила в рамках учебных дисциплин и хакатонов.
+                    </p>
+                </div>
+
+                <div class="grid grid--projects">
+                    <article class="card project">
+                        <h3 class="project__title">«Кампус-Навигатор»</h3>
+                        <p class="project__text">
+                            Веб-приложение с картой корпусов и поиском аудиторий. Студент вводит
+                            номер аудитории и получает маршрут внутри здания, ИСПРАВИТЬ!!!.
+                        </p>
+                        <ul class="chips">
+                            <li>React</li>
+                            <li>FastAPI</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                        <p class="project__status">Статус: внедрено в учебный процесс</p>
+                    </article>
+
+                    <article class="card project">
+                        <h3 class="project__title">«Расписание+»</h3>
+                        <p class="project__text">
+                            Телеграм-бот и веб-версия расписания с фильтрами по группе и
+                            преподавателю, уведомлениями об изменениях ИСПРАВИТЬ!!!.
+                        </p>
+                        <ul class="chips">
+                            <li>Python</li>
+                            <li>Aiogram</li>
+                            <li>SQLite</li>
+                        </ul>
+                        <p class="project__status">Статус: 400+ активных пользователей</p>
+                    </article>
+
+                    <article class="card project">
+                        <h3 class="project__title">«Учебный помощник»</h3>
+                        <p class="project__text">
+                            Сервис для планирования сессии: дедлайны, чек-листы по дисциплинам
+                            и напоминания о защитах лабораторных работ ИСПРАВИТЬ!!!.
+                        </p>
+                        <ul class="chips">
+                            <li>TypeScript</li>
+                            <li>React</li>
+                            <li>Vite</li>
+                        </ul>
+                        <p class="project__status">Статус: в активной разработке</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= КОНТАКТЫ ================= -->
+        <section class="section" id="contacts">
+            <div class="container">
+                <div class="section__head">
+                    <span class="kicker">Контакты</span>
+                    <h2 class="section__title">Связаться с командой</h2>
+                    <p class="section__lead">
+                        По всем вопросам пишите капитану команды — он передаст информацию нужному участнику.
+                    </p>
+                </div>
+
+                <div class="grid grid--contacts">
+                    <a class="card contact" href="mailto:captain@example.ru">
+                        <span class="contact__label">Электронная почта</span>
+                        <span class="contact__value">captain@example.ru</span>
+                    </a>
+                    <a class="card contact" href="https://t.me/volga_byte" target="_blank" rel="noopener">
+                        <span class="contact__label">Telegram</span>
+                        <span class="contact__value">@volga_byte</span>
+                    </a>
+                    <a class="card contact" href="https://gitverse.ru/volga-byte" target="_blank" rel="noopener">
+                        <span class="contact__label">Репозиторий</span>
+                        <span class="contact__value">gitverse.ru/volga-byte</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= ПОДВАЛ ================= -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__text">
+                © 2026 Команда «ВАПА». Сайт создан для отборочного задания хакатона «Волга.ТОП».
+            </p>
+            <div class="footer__links">
+                <a href="https://gitverse.ru/volga-byte" target="_blank" rel="noopener">Репозиторий(не рабочий)</a>
+                <a href="#top">Наверх ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Мобильное меню: открытие/закрытие и автозакрытие при переходе по ссылке
+        const burger = document.querySelector('.burger');
+        const nav = document.getElementById('nav');
+
+        burger.addEventListener('click', () => {
+            const isOpen = nav.classList.toggle('is-open');
+            burger.classList.toggle('is-active', isOpen);
+            burger.setAttribute('aria-expanded', String(isOpen));
+            burger.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню');
+        });
+
+        nav.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('is-open');
+                burger.classList.remove('is-active');
+                burger.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
