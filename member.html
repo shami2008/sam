@@ -79,6 +79,7 @@
             document.getElementById('mName').textContent = m.name;
             document.getElementById('mRole').textContent = m.role;
             document.getElementById('mGroup').textContent = m.group;
+            document.getElementById('mInfo').textContent = m.info || '';
 
             const skills = document.getElementById('mSkills');
             m.skills.forEach(s => {
