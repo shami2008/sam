@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Участник команды «ВАПА»</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="section" id="main">
+        <div class="container">
+            <a class="btn btn--ghost" href="index.html#team">← Назад к команде</a>
+
+            <article class="card member" id="memberCard" style="margin-top:24px; max-width:560px;">
+                <div class="member__avatar" id="mAvatar" aria-hidden="true"></div>
+                <h1 class="member__name" id="mName"></h1>
+                <p class="member__role" id="mRole"></p>
+                <p class="member__group" id="mGroup"></p>
+                <ul class="chips" id="mSkills" aria-label="Навыки участника"></ul>
+                <a class="member__contact" id="mMail" href="#">Написать</a>
+            </article>
+
+            <p style="margin-top:24px;">
+                <button class="btn btn--primary" onclick="history.back()">← Вернуться назад</button>
+            </p>
+        </div>
+    </main>
+
+    <script>
+        const members = {
+            "1": {
+                avatar: "У1",
+                name: "Губеева Альбина",
+                role: "Капитан · Frontend-разработчик",
+                group: "Группа 861-ТОП243",
+                skills: [ "TypeScript", "Git" , "Python", "C++"],
+                mail: "gubaalbin@yandex.ru"
+            },
+            "2": {
+                avatar: "У2",
+                name: "Узбек2",
+                role: "UI/UX-дизайнер",
+                group: "Группа 861-ТОП243",
+                skills: ["Figma", "HTML", "CSS", "Адаптивность"],
+                mail: "design@example.ru"
+            },
+            "3": {
+                avatar: "У3",
+                name: "Узбек3",
+                role: "Backend-разработчик",
+                group: "Группа 861-ТОП243",
+                skills: ["Python", "FastAPI", "PostgreSQL", "Docker"],
+                mail: "backend@example.ru"
+            },
+            "4": {
+                avatar: "У4",
+                name: "Узбек4",
+                role: "Аналитик · Тестирование",
+                group: "Группа 861-ТОП243",
+                skills: ["SQL", "Postman", "Pytest", "Документация"],
+                mail: "qa@example.ru"
+            }
+        };
+
+        // Берём id из адреса: member.html?id=2
+        const id = new URLSearchParams(location.search).get('id');
+        const m = members[id];
+
+        if (!m) {
+            document.getElementById('memberCard').innerHTML =
+                '<p>Участник не найден. <a href="index.html#team">Вернуться к команде</a></p>';
+        } else {
+            document.title = m.name + ' — команда «ВАПА»';
+            document.getElementById('mAvatar').textContent = m.avatar;
+            document.getElementById('mName').textContent = m.name;
+            document.getElementById('mRole').textContent = m.role;
+            document.getElementById('mGroup').textContent = m.group;
+
+            const skills = document.getElementById('mSkills');
+            m.skills.forEach(s => {
+                const li = document.createElement('li');
+                li.textContent = s;
+                skills.appendChild(li);
+            });
+
+            const mail = document.getElementById('mMail');
+            mail.href = 'mailto:' + m.mail;
+            mail.textContent = 'Написать: ' + m.mail;
+        }
+    </script>
+</body>
+
+
+</html>
